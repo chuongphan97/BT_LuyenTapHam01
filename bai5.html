@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 5</title>
+</head>
+<body onload="guessStar()">
+    <script>
+        function guessStar(){
+            let chomsao = ["Ursa Minor","Tarurus","Cygus","Lyra","Aquila","Ursa Major","Leo"];
+        let sao = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        let s = prompt('Nhập tên ngôi sao: ');
+        result =chomsao[sao.indexOf(s)];
+        console.log(result);
+        if(result==undefined) alert(`Không tìm thấy ngôi sao nào!`);
+        else alert(`${s} ở chòm sao ${result}`);
+        }
+    </script>
+</body>
+</html>
